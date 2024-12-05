@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>My Gift</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+            background: linear-gradient(to bottom, #ff00dd, #fc47cc);
             color: #fff;
             margin: 0;
             padding: 0;
@@ -16,6 +16,10 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
         button {
             background-color: #ff6f61;
@@ -25,26 +29,19 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            position: absolute;
+            bottom: 20px;
         }
         button:hover {
             background-color: #ff3b2f;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            p {
-                font-size: 1.2em;
-            }
         }
     </style>
 </head>
 <body>
     <div>
-        <h1>Welcome to Your Surprise! 🎉</h1>
-        <button onclick="window.location.href='message.html'">Enter</button>
+        <img src="https://scontent.fphs2-1.fna.fbcdn.net/v/t1.6435-9/159129120_106782591482892_4311172903157509730_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=669761&_nc_eui2=AeFmvL_EQkTLJb8Wjxe5wtzc-PG1aMW8cHf48bVoxbxwd70f0x0PQ1qP7WgG8kpJc0ugqBX1gy2eaigSE2uJyrj9&_nc_ohc=q3N_BR24oAwQ7kNvgFp0Khv&_nc_zt=23&_nc_ht=scontent.fphs2-1.fna&_nc_gid=AEAhbkB8C6lYgUjNuEo5hRm&oh=00_AYAAxdy_z97HTfDn0nEH2NnGOpMg_6lWu9ODsVAq4UJMqg&oe=67791AFC" alt="Surprise Gift">
     </div>
+
+    <button onclick="window.location.href='message.html'">Go Back</button>
 </body>
 </html>

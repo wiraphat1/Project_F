@@ -15,6 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
         }
         h1 {
@@ -24,13 +25,61 @@
             font-size: 1.5em;
             margin-top: 20px;
         }
+
+        button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        button:hover {
+            background-color: #ff3b2f;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            button {
+                font-size: 1.2em;
+                padding: 12px 25px;
+            }
+        }
     </style>
 </head>
 <body>
     <div>
         <h1>Happy Birthday, Love! ❤️</h1>
-        <p>You're the best thing that ever happened to me. 🎂</p>
-        <p>May this year be filled with love, joy, and success!</p>
+        <p id="message">Happy Birthday, my little one. Thank you for making my life so full of excitement. I wish this year brings only good things into your life.<br><br>
+        I want you to be happy and successful in everything you do.<br><br>
+        I hope you stay healthy and free from illness. I apologize for anything I've done wrong.<br><br>
+        Love you, little one 🤔</p>
     </div>
+
+    <div>
+        <button onclick="translateMessage()">Translate Message</button>
+    </div>
+
+    <div>
+        <button onclick="window.location.href='image.html'">Click to See My Gift!</button>
+    </div>
+
+    <script>
+        function translateMessage() {
+            var messageElement = document.getElementById("message");
+            messageElement.innerHTML = "สุขสันต์วันเกิดนะเจ้าตัวเล็ก ขอบคุณที่ทำให้ชีวิตของเค้ามีความวุนวายนะ ขอให้ปีนี้มีแต่สิ่งดีๆ<br><br>" +
+                "เข้ามาในชีวิตของตัว อยากให้ตัวมีความสุขและประสบความสำเร็จในทุกๆ ในเรื่องที่ทำ<br><br>" +
+                "ขอไม่เจ็บไม่ป่วย ไข้ไม่ต้องแตก สิ่งที่เค้าทำผิดไปก็ขอโทษด้วยนิ<br><br>" +
+                "รักนะคนตัวเล็ก 🤔";
+        }
+    </script>
 </body>
 </html>
